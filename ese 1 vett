@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Definire un vettore V contenente 5 nomi di cantanti
+    string V[5];
+    V[0] = "Matt";
+    V[1] = "John";
+    V[2] = "Sara";
+    V[3] = "Luca";
+    V[4] = "Amy";
+
+    // Definire un vettore W contenente 5 nomi di cantanti
+    string W[5];
+    for (int i = 0; i < 5; i++) {
+        cout << "Inserisci il nome del cantante " << i + 1 << ": ";
+        cin >> W[i];
+    }
+
+    // Definire un vettore X contenente 10 numeri da 1 a 10
+    int X[10];
+    for (int i = 0; i < 10; i++) {
+        X[i] = i + 1;
+    }
+
+    // Definire un vettore Y contenente i primi 10 numeri pari
+    int Y[10];
+    for (int i = 0; i < 10; i++) {
+        Y[i] = (i + 1) * 2;
+    }
+
+    // Visualizzare solo 3 elementi del vettore V
+    cout << V[0] << endl;
+    cout << V[2] << endl;
+    cout << V[4] << endl;
+
+    // Visualizzare tutti gli elementi dei vettori V, W, X, Y
+    cout << "Vettore V:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << V[i] << endl;
+    }
+
+    cout << "Vettore W:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << W[i] << endl;
+    }
+
+    cout << "Vettore X:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << X[i] << endl;
+    }
+
+    cout << "Vettore Y:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << Y[i] << endl;
+    }
+
+    // Visualizzare solo gli elementi con indice pari del vettore X
+    cout << "Elementi con indice pari del vettore X:" << endl;
+    for (int i = 0; i < 10; i += 2) {
+        cout << X[i] << endl;
+    }
+
+    // Visualizzare solo gli elementi con indice dispari del vettore X
+    cout << "Elementi con indice dispari del vettore X:" << endl;
+    for (int i = 1; i < 10; i += 2) {
+        cout << X[i] << endl;
+    }
+
+    // Visualizzare solo gli elementi con valore pari del vettore X
+    cout << "Elementi con valore pari del vettore X:" << endl;
+    for (int i = 0; i < 10; i++) {
+        if (X[i] % 2 == 0) {
+            cout << X[i] << endl;
+        }
+    }
+
+    return 0;
+}
